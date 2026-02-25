@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento relative</title>
+    <style>
+        .div_grande{
+			background-color: aqua;
+            position: static;
+            top: 200px;  /*não funciona porque é static*/
+        }
+        .div_pequena{
+			background-color: yellow;
+            position: relative;	/* com este posicionamento o elemento pode ser deslocado relativamente à sua posição original utilizando top, right, bottom e left
+			O elemento permanece no fluxo normal da página ocupando o seu espaço original*/
+            left: 100px;
+			top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+</body>
+</html>

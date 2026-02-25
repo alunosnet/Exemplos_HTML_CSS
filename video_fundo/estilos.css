@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*div que contém o vídeo*/
+.video-container {
+    position: relative; 
+    height: 100vh;      /*tamanho 100% altura*/
+    width: 100vw;       /*tamanho 100% largura*/
+    overflow: hidden;   /*esconder de sair*/
+}
+/*tag do video*/
+.video-bg {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+}
+/*texto para aparecer à frente do vídeo*/
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*para permitir várias linhas de texto*/
+    flex-direction: column;
+    gap: 20px;
+}
+.content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* Opcional: adiciona um overlay escuro sobre o vídeo */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}

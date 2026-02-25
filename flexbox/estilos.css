@@ -1,0 +1,33 @@
+/* https://www.youtube.com/watch?v=K74l26pE4YA */
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*align-content: space-between; /*espaço entre elementos*/
+    /*height: 600px;*/
+    justify-content: flex-start; /*alinha horizontal*/
+    align-items: flex-start;    /*alinha vertical*/
+}
+
+.item{
+    height: 200px;
+    width: 200px;   /*largura fixa*/
+    /*flex: 1; largura automática*/
+    border: 1px solid black;
+    margin: 10px 5px 10px 5px;
+    padding: 5px 5px 5px 5px;
+}
+#um{
+    background-color: yellow;
+   /* flex: 1;/*tamanho relativo aos outros elementos*/
+}
+
+#dois{
+    background-color: purple;
+   /* flex: 2;/*tamanho relativo aos outros elementos*/
+}
+
+#tres{
+    background-color: aqua;
+    /*flex: 1;/*tamanho relativo aos outros elementos*/
+}

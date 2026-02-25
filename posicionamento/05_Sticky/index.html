@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div_grande{
+			background-color: aqua;
+            position: sticky;   /*funciona como relativo até um determinado ponto onde passa a ser fixo*/
+            top: 0px;  
+        }
+        .div_pequena{
+			background-color: yellow;
+            position: sticky; /*funciona como relativo até um determinado ponto onde passa a ser fixo*/
+            bottom: 100px;     /*quando estiver a 100px do fundo passa a fixo*/
+        }
+    </style>
+</head>
+<body>
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div class="div_grande">
+        Isto é uma div
+
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+</body>
+</html>

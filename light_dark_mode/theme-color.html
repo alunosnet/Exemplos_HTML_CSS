@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tema Automático</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;	/*100% da altura da janela (viewport)*/
+            display: flex;			/* display flex para facilitar o alinhamento*/
+            justify-content: center;	/* alinhamento horizontal */
+            align-items: center;		/* alinhamento vertical*/
+            font-family: system-ui, sans-serif;
+            transition: background-color 1s, color 1s;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #ffffff;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Esta página se adapta ao tema do seu dispositivo</h1>
+</body>
+</html>

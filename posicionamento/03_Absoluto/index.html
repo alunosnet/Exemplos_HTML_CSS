@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento estático</title>
+    <style>
+        .div_grande{
+		background-color: aqua;
+            position: relative;
+            top: 200px;  
+        }
+        .div_pequena{
+		background-color: yellow;
+            position: absolute; /*O elemento é removido do fluxo normal e posicionado em relação ao seu container pai mais próximo com um posicionamento não estático.*/
+            top: 100px;    /*pode ser positivo ou negativo*/
+        }
+    </style>
+</head>
+<body>
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+</body>
+</html>

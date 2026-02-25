@@ -1,0 +1,22 @@
+    <style>
+        .menu{
+            display: inline-block;
+        }
+        .opcoes{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        .opcoes > a{
+            display: block;
+        }
+        .menu:hover{
+                background-color: darkgray;
+                color: white;
+            .opcoes{
+                display: block;
+            }
+        }
+    </style>

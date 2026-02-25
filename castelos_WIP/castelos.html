@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img{
+                width: 100%;
+            }
+            .DivCastelo{
+                border: solid black 1px;
+                width: 40%;
+                float: left;
+                margin: 10px 10px 10px 10px;
+                padding: 5px 5px 5px 5px;
+                height: 500px;
+            }
+            /*Para centrar as divs dos castelo*/
+            .DivPrincipal{
+                display: flex;
+                justify-content: center;
+            }
+            /*formatar os h2 dentro das div com a class divcastelo*/
+            .DivCastelo > h2{
+                text-align: center;
+            }
+            /*formatação do header*/
+            header{
+                position: fixed;
+                top: 0px;
+                width: 100%;
+                font-size: 28pt;
+                text-align: center;
+                background-color: darkgray;
+            }
+            body{
+                margin-top: 42px;
+                margin-bottom: 42px;
+            }
+            footer{
+                width: 100%;
+                position: fixed;
+                bottom: 0px;
+                background-color: darkgray;
+            }
+        </style>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>Trabalho de Programação de Sistemas</header>
+        <h1>Castelos de Portugal</h1>
+        <h2>Programação de Sistemas</h2>
+        <div class="DivPrincipal">
+            <div class="DivCastelo">
+            <h2>Castelo de Almoroul</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Almourol_034.jpg"/>
+            </div>
+            <div class="DivCastelo">
+            <h2>Castelo de Montemor-o-Velho</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/MontemorVelho-CCBY-4.jpg"/>
+            </div>
+        </div>
+        <footer>Trabalho realizador por: 10ºI</footer>
+    </body>
+</html>

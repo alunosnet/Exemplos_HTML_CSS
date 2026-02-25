@@ -1,0 +1,21 @@
+/*definir que o tamanho inclui a margem e o padding*/
+*{
+    box-sizing: border-box;
+}
+.div_grande{
+    background-color: aqua;
+    position: relative; 
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    float: left;
+}
+
+.div_pequena{
+    background-color: yellow;
+    position: absolute; /*posicionamento absoluto em relação ao pai com posicionamento diferente de static*/
+    top: 100px;
+    left: 10px;
+    width: 200px;
+    height: 100px;
+}

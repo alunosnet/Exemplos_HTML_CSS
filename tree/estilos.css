@@ -1,0 +1,79 @@
+.tree_up{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid green;
+    z-index: 1;
+}
+
+.tree_shadow{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid black;
+    z-index: -1;
+}
+
+
+.bolas{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.red{
+    background-color: red;
+    top: 50px;
+    left: 100px;
+    position: absolute;
+    animation-name: piscar_vermelho;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.blue{
+    background-color: blue;
+    top: 80px;
+    left: 135px;
+    position: absolute;
+    box-shadow: 1px 1px 15px lightblue;
+}
+
+.ovo{
+
+    width: 20px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.ovo_posicao{
+    position: absolute;
+    top: 120px;
+    left: 55px;
+}
+
+.fita{
+    width: 85px;
+    height: 85px;
+    border: solid 3px #333;
+    border-radius: 50%;
+    top: 55px; 
+    left: 55px; 
+    position: absolute;
+    transform: rotate3d(8, 0.1, -5, 75deg); 
+    box-sizing: border-box;
+    backface-visibility: hidden !important;
+    z-index:2;
+  }
+
+@keyframes piscar_vermelho {
+    0% {background-color: red;}
+    50% {background-color: lightcoral;}
+    100% {background-color: red;}
+}

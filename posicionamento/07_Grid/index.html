@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div_grande{
+		background-color: aqua;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            border: solid black;
+        }
+        .div_pequena{
+background-color: yellow;
+            border: solid red;
+
+        }
+        /* Layout responsivo para ecrãs menores */
+        @media (max-width: 768px) {
+            .div_grande {
+                grid-template-columns: 1fr; /* Muda para uma única coluna */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div_grande">
+
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+</body>
+</html>

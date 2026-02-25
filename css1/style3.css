@@ -1,0 +1,56 @@
+/* Box Model Hack*/
+*{
+    box-sizing: border-box;
+}
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+html{
+    font-size: 100%;
+}
+
+header, footer{
+    height: 100px;
+    border: 2px solid black;
+    clear: both;
+    font-size: 2rem;
+}
+
+section{
+    height: 300px;
+    width: 20%;
+    border: 2px solid black;
+    float: left;
+    font-size: 1rem;
+}
+
+.thiccOne{
+    width: 40%;
+}
+/*entre 0 e 600*/
+@media screen and (max-width: 600px){
+    section{
+        background: green;
+    }
+}
+/*entre 601 e 900*/
+@media (min-width: 601px) and (max-width: 900px){
+    section{
+        background: blue;
+        width: 33.333%
+    }
+    .thiccOne{
+        display: none;
+    }
+}

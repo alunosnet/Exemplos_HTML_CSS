@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div_grande{
+            display: flex;
+			background-color: aqua;
+            justify-content: center;
+            align-items: center;
+            top: 0px; /*não afeta a flex*/ 
+            border: solid black;
+        }
+        .div_pequena{
+		background-color: yellow;
+            border: solid red;
+            width: 200px;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+</body>
+</html>

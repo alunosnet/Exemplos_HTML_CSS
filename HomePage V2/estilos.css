@@ -1,0 +1,144 @@
+/* Retirar as margens e padding do body */
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+/* formatar a div do cabeçalho */
+#cabeçalho{
+    background-color: lightblue;
+    width: 80%;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    height: 150px;
+    border: 1px black solid;
+}
+
+/* formatar o menu */
+.menu{
+    background-color: blue;
+    border-radius: 10px;
+    margin: auto;
+    height: 40px;
+    border: 1px solid black;
+    width: 90%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* regra para aplicar às tag a dentro da div 
+com a classe menu*/
+.menu > a{
+    text-decoration: none;
+    color: white;
+}
+/* formatar o fundo azul escuro do cabeçalho*/
+.fundo_cabeçalho{
+    background-color: blue;
+    height: 152px;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+}
+/* div dos dados*/
+#dados{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+/*formatar a imagem dentro da div dados*/
+#dados > img{
+    float: right;
+    margin-right: 20px;
+}
+
+/* div dos links*/
+#links{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* formatar os links */
+#links > ul > li >a{
+    text-decoration: none;
+    color: black;
+}
+
+/* formatar o simbolo das li*/
+#links > ul > li{
+    list-style-type: none;
+}
+
+/* formatar a div da mensagem */
+#mensagem{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* formatar label da mensagem */
+#mensagem > form > label{
+    width: 10%;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+/* formatar input de texto */
+#mensagem > form > input[type="text"]
+{
+    width: 80%;
+    background-color: blue;
+    color: white;
+}
+/* formatar input de email */
+#mensagem > form > input[type="email"]
+{
+    width: 80%;
+    background-color: blue;
+    color: white;
+}
+/* formatar a input selecionada*/
+#mensagem > form > input[type="text"]:focus
+{
+    background-color: yellow;
+}
+/* formatar a text area */
+#mensagem > form > textarea{
+    width: 80%;
+    background-color: blue;
+    color: white;
+    resize: none;
+}
+/* formatar o botão submit */
+#mensagem > form > input[type="submit"]
+{
+    background-color: aqua;
+    border: 0px;
+    font-size: 1.1rem;
+}
+/* formatar a cor do botão quando o rato passa sobre ele*/
+#mensagem > form > input[type="submit"]:hover{
+    background-color: yellowgreen;
+}
+
+/* rodapé */
+#rodape{
+    border: 1px solid black;
+    width: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 20px;
+    background-color: lightgrey;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

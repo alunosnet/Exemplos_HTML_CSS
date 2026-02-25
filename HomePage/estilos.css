@@ -1,0 +1,125 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+.cabeçalho{
+    background-color: lightblue;
+    width: 80%;
+    margin: auto;
+    height: 150px;
+    padding: 0px 10px 0px 10px;
+    border: 1px black solid;
+}
+
+.menu{
+    background-color: blue;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px 0px 0px 0px;
+    height: 40px;
+    border: 1px solid black;
+    width: 95%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.fundo_cabeçalho{
+    background-color: blue;
+	border: 0px;
+	margin: 0px;
+    height: 152px;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;    /* para ficar por debaixo*/
+}
+/*a dentro da classe*/
+.menu > a{
+    text-decoration: none;
+    color: white;
+}
+/*img dentro do id*/
+#dados > img{
+    float: right;
+    margin-right: 20px;
+}
+#dados{
+    width: 80%;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 0px 0px 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#links{
+    width: 80%;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 0px 0px 20px;
+}
+
+
+#links > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+#links > ul > li{
+    list-style-type: none;
+}
+
+
+#mensagem{
+    width: 80%;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 20px 0px 20px 20px;
+}
+
+#mensagem > form > label{
+    width: 10%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+
+#mensagem > form > input[type="text"]{
+    width: 80%;
+    background-color: blue;
+    color: white;
+}
+
+#mensagem > form > input[type="email"]{
+    width: 80%;
+    background-color: blue;
+    color: white;
+}
+
+#mensagem > form > textarea{
+    width: 80%;
+    background-color: blue;
+    color: white;
+    resize: none;
+}
+
+#mensagem > form > input[type="submit"]{
+    background-color: aqua;
+    border: 0px;
+    font-size: 1.1rem;
+}
+
+#rodape{
+    border: 1px solid black;
+    width: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 20px;
+    background-color: lightgrey;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

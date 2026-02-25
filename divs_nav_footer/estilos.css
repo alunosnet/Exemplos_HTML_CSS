@@ -1,0 +1,95 @@
+*{
+	box-sizing: border-box;
+}
+/* formatação da navbar (barra de menu)*/
+nav{
+    background-color: coral;
+    color: white;
+    height: 60px;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 0px 0px 20px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: fixed;
+    font-size: 2rem;
+}
+/* formatação do footer (rodapé)*/
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 2px;
+    right: 2px;
+    background-color: rgba(33, 33, 33, 0.9);
+    border: 1px solid orange;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 0px 20px 40px;	/*cima direita baixo esquerda*/
+    font-size: 2em;
+    color: orangered;
+}
+body{
+    padding-bottom: 140px;
+    margin: 0;
+}
+/* formatação da tag main */
+main{
+    padding: 80px 15px 50px 150px;
+}
+/*divs*/
+div{
+    width: 300px;
+    height: 500px;
+    float: left;
+    border: 1px solid black;
+    margin: 5px 5px 5px 5px;
+    line-height: 500px;
+    text-align: center;
+}
+/*Divs se a resolução for menor que 800px*/
+@media only screen and (max-width: 800px) {
+    div {
+        width: 80%; 
+    }
+}
+.div1{
+    background-color: yellow;
+}
+
+.div2{
+    background-image: linear-gradient(yellow, blue);
+}
+
+.div3{
+    background-image: url('18.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/*img dentro da div4*/
+.div4 img{
+    width: 75%;
+    vertical-align: middle;
+}
+
+.div5 {
+    text-shadow: 2px 2px 5px red;
+}
+/*img dentro da div5*/
+.div5 img{
+    vertical-align: middle;
+    width: 75%;
+    border-radius: 120px;
+}
+
+.SideBar{
+    width: 100px;
+    height: 500px;
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    text-align: center;
+    background-color: aqua;
+    line-height:normal;
+}

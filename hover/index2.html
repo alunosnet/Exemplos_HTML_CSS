@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .opcoes{
+            display: none;
+        }
+        /*operador + só funciona se forem adjavcentes*/
+        /*com o ~ funciona desde que sejam irmão*/
+        .menu:hover ~.opcoes{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--Este exemplo não funciona porque para selecionar
+    um elemento o rato sai da div-->
+    <div class="menu">
+        Menu
+    </div>
+    <div></div>
+    <div class="opcoes">
+        <a href="#">Opção 1</a>
+        <a href="#">Opção 2</a>
+        <a href="#">Opção 3</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    /* cada item ocupa no minimo 400px ou uma fração da largura do ecra*/
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+	/* horizontal vertical blur spread cor, outra sombra*/
+	box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.item > img{
+    max-width: 100%;
+}
+
+header, footer{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+
+    background-color: lightgray;
+}

@@ -1,0 +1,12 @@
+body{
+    background-color: lightgray;
+    color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Estilos para o modo escuro */
+    body{
+        background-color: darkgray;
+        color: white;
+    }
+}

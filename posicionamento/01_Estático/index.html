@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento static</title>
+    <style>
+        .div_grande{
+			background-color: aqua;
+            position: static; /*posicionamento padrão*/
+            top: 200px;  /*não funciona porque é static*/
+        }
+        .div_pequena{
+			background-color: yellow;
+            position: static;
+            left: 100px;    /*não funciona porque é static*/
+        }
+    </style>
+</head>
+<body>
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+
+    <div class="div_grande">
+        Isto é uma div
+        <div class="div_pequena">
+            Isto é outra div
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* grid principal*/
+.container {
+    display: grid;
+    /*1/4 para barra lateral*/
+    grid-template-columns: 1fr 4fr;
+
+    gap: 20px;
+    padding: 20px;
+}
+/* barra lateral*/
+.barra_lateral {
+    background-color: lightblue;
+    padding: 0px;
+    max-width: 200px;
+    min-width: 200px;
+}
+.barra_lateral ul{
+    list-style-type: none;
+}
+.barra_lateral a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* grid secundária para os artigos*/
+.container2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.item img{
+    max-width: 100%;
+}
+
+header, footer{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
